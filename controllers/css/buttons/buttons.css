@@ -1,0 +1,434 @@
+/* Buttons shortcodes
+-------------------------------------------------- */
+
+body {
+  padding-top: 50px;
+  background: #e5e5e5;
+}
+
+.button {
+  padding: 4px 16px;
+  font-size: 12px;
+  display: inline-block;
+  margin: 2px 7px !important;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #e5e5e5;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-position: bottom right;
+  background-position: bottom left, top right, 0 0, 0 0;
+  background-clip: border-box;
+
+  -webkit-transition:background-position 1s;
+  -moz-transition:background-position 1s;
+  transition:background-position 1s;
+}
+
+.button:first-child {
+  margin-left: 0 !important;
+}
+
+.button:last-child {
+  margin-right: 0 !important;
+}
+
+.button.disabled {
+  opacity: 0.6;
+}
+
+.btn-group.atinaGroup {
+  margin: 2px 5px 0;
+  margin-top: 2px;
+}
+
+.btn-group .button {
+  margin: 0px -1px 0 0 !important;
+  -webkit-border-radius: 0;
+  -webkit-box-shadow: none;
+}
+
+.btn-group .button:first-child {
+  -webkit-border-radius: 2px 0 0 2px;
+}
+
+.btn-group .button:last-child {
+  -webkit-border-radius: 0 2px 2px 0;
+}
+
+.btn-group .button:active,
+.btn-group .button.active,
+.btn-group .button:hover {
+  opacity: 0.75;
+  -webkit-box-shadow: none;
+}
+
+.button img {
+  margin-right: 2px;
+  margin-left: -2px;
+  position: relative;
+  top: -1px;
+}
+
+.button:hover {
+  color: #e5e5e5;
+  text-decoration: none;
+  background-position:top left;
+  background-position:top left, bottom right, 0 0, 0 0;
+}
+
+.lButton {
+  padding: 8px 18px;
+  font-size: 12px;
+}
+
+.sButton {
+  padding: 3px 14px;
+  font-size: 11px;
+}
+
+.blockButton {
+  display: block !important;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+button.blockButton {
+  margin-top: 15px;
+}
+
+.ctrlButton {
+  display: inline-block;
+  width: 22px !important;
+  height: 22px !important;
+  padding: 0 !important;
+  text-align: center;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 0 #fff;
+  box-shadow: inset 0 1px 0 #fff, 0 1px 0 #fff;
+  position: relative;
+
+  background: #f8f8f8;
+  background: -moz-linear-gradient(top, #f8f8f8 0%, #eaeaea 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#eaeaea));
+  background: -webkit-linear-gradient(top, #f8f8f8 0%,#eaeaea 100%);
+  background: -o-linear-gradient(top, #f8f8f8 0%,#eaeaea 100%);
+  background: -ms-linear-gradient(top, #f8f8f8 0%,#eaeaea 100%);
+  background: linear-gradient(to bottom, #f8f8f8 0%,#eaeaea 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#eaeaea',GradientType=0 );
+}
+
+.ctrlButton:hover {
+  background: #f8f8f8;
+}
+
+.btn-group .ctrlButton {
+  margin: 0 -1px 0 0;
+}
+
+.ctrlGroup {
+  margin-top: 0px;
+}
+
+.ctrlButton img {
+  margin: 4px 0 0 4px;
+  display: block;
+}
+
+.bAtina {
+  background-image: #d8d8d8;
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png),  -moz-linear-gradient(top, #d8d8d8 0%, #cbcbcb 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png),  -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d8d8d8), color-stop(100%,#cbcbcb));
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png),  -webkit-linear-gradient(top, #d8d8d8 0%,#cbcbcb 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png),  -o-linear-gradient(top, #d8d8d8 0%,#cbcbcb 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png),  -ms-linear-gradient(top, #d8d8d8 0%,#cbcbcb 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png),  linear-gradient(to bottom, #d8d8d8 0%,#cbcbcb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#cbcbcb',GradientType=0 );
+  border: 1px solid #b8b8b8;
+  color: #707070;
+  text-shadow: 0 1px 0 #fff;
+  -webkit-box-shadow: inset 0 1px 0 #e5e5e5, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 0 #e5e5e5, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 0 #e5e5e5, 0 0 0 4px #d5d5d5;
+}
+
+.label.bAtina, .badge.bAtina {
+  background-image: #d8d8d8;
+  background-image: -moz-linear-gradient(top, #d8d8d8 0%, #cbcbcb 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d8d8d8), color-stop(100%,#cbcbcb));
+  background-image: -webkit-linear-gradient(top, #d8d8d8 0%,#cbcbcb 100%);
+  background-image: -o-linear-gradient(top, #d8d8d8 0%,#cbcbcb 100%);
+  background-image: -ms-linear-gradient(top, #d8d8d8 0%,#cbcbcb 100%);
+  background-image: linear-gradient(to bottom, #d8d8d8 0%,#cbcbcb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8d8d8', endColorstr='#cbcbcb',GradientType=0 );
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.bAtina:hover {
+  color: #707070;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.bAtina.active, .bAtina:active {
+  -webkit-box-shadow: inset 0px 1px 5px 0 #b8b8b8, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 5px 0 #b8b8b8, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 5px 0 #b8b8b8, 0 0 0 4px #d5d5d5;
+}
+
+.bSky {
+  background-image: #0b3456;
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -moz-linear-gradient(top, #0b3456 0%, #0c395f 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0b3456), color-stop(100%,#0c395f));
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -webkit-linear-gradient(top, #0b3456 0%,#0c395f 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -o-linear-gradient(top, #0b3456 0%,#0c395f 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -ms-linear-gradient(top, #0b3456 0%,#0c395f 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), linear-gradient(to bottom, #0b3456 0%,#0c395f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b3456', endColorstr='#0c395f',GradientType=0 );
+  border: 1px solid #0c395f;
+  text-shadow: 0 1px 0 #0c395f;
+  -webkit-box-shadow: inset 0 1px 0 #a7c4e7, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 0 #a7c4e7, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 0 #a7c4e7, 0 0 0 4px #d5d5d5;
+}
+
+.label.bSky, .badge.bSky {
+  background-image: #0b3456;
+  background-image: -moz-linear-gradient(top, #0b3456 0%, #0c395f 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0b3456), color-stop(100%,#0c395f));
+  background-image: -webkit-linear-gradient(top, #0b3456 0%,#0c395f 100%);
+  background-image: -o-linear-gradient(top, #0b3456 0%,#0c395f 100%);
+  background-image: -ms-linear-gradient(top, #0b3456 0%,#0c395f 100%);
+  background-image: linear-gradient(to bottom, #0b3456 0%,#0c395f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b3456', endColorstr='#0c395f',GradientType=0 );
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.bSky:active {
+  -webkit-box-shadow: inset 0px 1px 5px 0 #0c395f, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 5px 0 #0c395f, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 5px 0 #0c395f, 0 0 0 4px #d5d5d5;
+}
+
+.bMuddy {
+  background-image: #de8b74;
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -moz-linear-gradient(top, #de8b74 0%, #d47a61 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#de8b74), color-stop(100%,#d47a61));
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -webkit-linear-gradient(top, #de8b74 0%,#d47a61 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -o-linear-gradient(top, #de8b74 0%,#d47a61 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -ms-linear-gradient(top, #de8b74 0%,#d47a61 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), linear-gradient(to bottom, #de8b74 0%,#d47a61 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8b74', endColorstr='#d47a61',GradientType=0 );
+  border: 1px solid #cb725a;
+  text-shadow: 0 1px 0 #cb725a;
+  -webkit-box-shadow: inset 0 1px 0 #e29d8a, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 0 #e29d8a, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 0 #e29d8a, 0 0 0 4px #d5d5d5;
+}
+
+.label.bMuddy, .badge.bMuddy {
+  background-image: #de8b74;
+  background-image: -moz-linear-gradient(top, #de8b74 0%, #d47a61 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#de8b74), color-stop(100%,#d47a61));
+  background-image: -webkit-linear-gradient(top, #de8b74 0%,#d47a61 100%);
+  background-image: -o-linear-gradient(top, #de8b74 0%,#d47a61 100%);
+  background-image: -ms-linear-gradient(top, #de8b74 0%,#d47a61 100%);
+  background-image: linear-gradient(to bottom, #de8b74 0%,#d47a61 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8b74', endColorstr='#d47a61',GradientType=0 );
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.bMuddy.active, .bMuddy:active {
+  -webkit-box-shadow: inset 0px 1px 5px 0 #cb725a, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 5px 0 #cb725a, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 5px 0 #cb725a, 0 0 0 4px #d5d5d5;
+}
+
+.bOlive {
+  background-image: #93c065;
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -moz-linear-gradient(top, #93c065 0%, #90bf60 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93c065), color-stop(100%,#90bf60));
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -webkit-linear-gradient(top, #93c065 0%,#90bf60 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -o-linear-gradient(top, #93c065 0%,#90bf60 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -ms-linear-gradient(top, #93c065 0%,#90bf60 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), linear-gradient(to bottom, #93c065 0%,#90bf60 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93c065', endColorstr='#90bf60',GradientType=0 );
+  border: 1px solid #7faa54;
+  text-shadow: 0 1px 0 #7faa54;
+  -webkit-box-shadow: inset 0 1px 0 #a2ce76, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 0 #a2ce76, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 0 #a2ce76, 0 0 0 4px #d5d5d5;
+}
+
+.label.bOlive, .badge.bOlive {
+  background-image: #93c065;
+  background-image: -moz-linear-gradient(top, #93c065 0%, #90bf60 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#93c065), color-stop(100%,#90bf60));
+  background-image: -webkit-linear-gradient(top, #93c065 0%,#90bf60 100%);
+  background-image: -o-linear-gradient(top, #93c065 0%,#90bf60 100%);
+  background-image: -ms-linear-gradient(top, #93c065 0%,#90bf60 100%);
+  background-image: linear-gradient(to bottom, #93c065 0%,#90bf60 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93c065', endColorstr='#90bf60',GradientType=0 );
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.bOlive.active, .bOlive:active {
+  -webkit-box-shadow: inset 0px 1px 5px 0 #7faa54, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 5px 0 #7faa54, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 5px 0 #7faa54, 0 0 0 4px #d5d5d5;
+}
+
+.bAutumn {
+  background-image: #edba5e;
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -moz-linear-gradient(top, #edba5e 0%, #f0b243 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#edba5e), color-stop(100%,#f0b243));
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -webkit-linear-gradient(top, #edba5e 0%,#f0b243 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -o-linear-gradient(top, #edba5e 0%,#f0b243 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -ms-linear-gradient(top, #edba5e 0%,#f0b243 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), linear-gradient(to bottom, #edba5e 0%,#f0b243 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edba5e', endColorstr='#f0b243',GradientType=0 );
+  border: 1px solid #dea53f;
+  text-shadow: 0 1px 0 #dea53f;
+  -webkit-box-shadow: inset 0 1px 0 #f3c97d, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 0 #f3c97d, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 0 #f3c97d, 0 0 0 4px #d5d5d5;
+}
+
+.label.bAutumn, .badge.bAutumn {
+  background-image: #edba5e;
+  background-image: -moz-linear-gradient(top, #edba5e 0%, #f0b243 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#edba5e), color-stop(100%,#f0b243));
+  background-image: -webkit-linear-gradient(top, #edba5e 0%,#f0b243 100%);
+  background-image: -o-linear-gradient(top, #edba5e 0%,#f0b243 100%);
+  background-image: -ms-linear-gradient(top, #edba5e 0%,#f0b243 100%);
+  background-image: linear-gradient(to bottom, #edba5e 0%,#f0b243 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edba5e', endColorstr='#f0b243',GradientType=0 );
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.bAutumn.active, .bAutumn:active {
+  -webkit-box-shadow: inset 0px 1px 5px 0 #dea53f, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 5px 0 #dea53f, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 5px 0 #dea53f, 0 0 0 4px #d5d5d5;
+}
+
+.bDahlia {
+  background-image: #b9a9f4;
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -moz-linear-gradient(top, #b9a9f4 0%, #b2a0f2 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b9a9f4), color-stop(100%,#b2a0f2));
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -webkit-linear-gradient(top, #b9a9f4 0%,#b2a0f2 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -o-linear-gradient(top, #b9a9f4 0%,#b2a0f2 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -ms-linear-gradient(top, #b9a9f4 0%,#b2a0f2 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), linear-gradient(to bottom, #b9a9f4 0%,#b2a0f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9a9f4', endColorstr='#b2a0f2',GradientType=0 );
+  border: 1px solid #9e8ae5;
+  text-shadow: 0 1px 0 #9e8ae5;
+  -webkit-box-shadow: inset 0 1px 0 #cbbef8, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 0 #cbbef8, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 0 #cbbef8, 0 0 0 4px #d5d5d5;
+}
+
+.label.bDhalia, .badge.bDhalia {
+  background-image: #b9a9f4;
+  background-image: -moz-linear-gradient(top, #b9a9f4 0%, #b2a0f2 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b9a9f4), color-stop(100%,#b2a0f2));
+  background-image: -webkit-linear-gradient(top, #b9a9f4 0%,#b2a0f2 100%);
+  background-image: -o-linear-gradient(top, #b9a9f4 0%,#b2a0f2 100%);
+  background-image: -ms-linear-gradient(top, #b9a9f4 0%,#b2a0f2 100%);
+  background-image: linear-gradient(to bottom, #b9a9f4 0%,#b2a0f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9a9f4', endColorstr='#b2a0f2',GradientType=0 );
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.bDahlia:active {
+  -webkit-box-shadow: inset 0px 1px 5px 0 #9e8ae5, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 5px 0 #9e8ae5, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 5px 0 #9e8ae5, 0 0 0 4px #d5d5d5;
+}
+
+.bTrq {
+  background-image: #60c9df;
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -moz-linear-gradient(top, #60c9df 0%, #56c3d9 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#60c9df), color-stop(100%,#56c3d9));
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -webkit-linear-gradient(top, #60c9df 0%,#56c3d9 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -o-linear-gradient(top, #60c9df 0%,#56c3d9 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -ms-linear-gradient(top, #60c9df 0%,#56c3d9 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), linear-gradient(to bottom, #60c9df 0%,#56c3d9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60c9df', endColorstr='#56c3d9',GradientType=0 );
+  border: 1px solid #4ab5cb;
+  text-shadow: 0 1px 0 #4ab5cb;
+  -webkit-box-shadow: inset 0 1px 0 #8cd6e5, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 0 #8cd6e5, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 0 #8cd6e5, 0 0 0 4px #d5d5d5;
+}
+
+.label.bTrq, .badge.bTrq {
+  background-image: #60c9df;
+  background-image: -moz-linear-gradient(top, #60c9df 0%, #56c3d9 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#60c9df), color-stop(100%,#56c3d9));
+  background-image: -webkit-linear-gradient(top, #60c9df 0%,#56c3d9 100%);
+  background-image: -o-linear-gradient(top, #60c9df 0%,#56c3d9 100%);
+  background-image: -ms-linear-gradient(top, #60c9df 0%,#56c3d9 100%);
+  background-image: linear-gradient(to bottom, #60c9df 0%,#56c3d9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60c9df', endColorstr='#56c3d9',GradientType=0 );
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.bTrq.active, .bTrq:active {
+  -webkit-box-shadow: inset 0px 1px 5px 0 #4ab5cb, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 5px 0 #4ab5cb, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 5px 0 #4ab5cb, 0 0 0 4px #d5d5d5;
+}
+
+.bFire {
+  background-image: #ff8a00;
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -moz-linear-gradient(top, #ff8a00 0%, #ff7b00 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff8a00), color-stop(100%,#ff7b00));
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -webkit-linear-gradient(top, #ff8a00 0%,#ff7b00 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -o-linear-gradient(top, #ff8a00 0%,#ff7b00 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), -ms-linear-gradient(top, #ff8a00 0%,#ff7b00 100%);
+  background-image: url(../../img/bubbleButton.png), url(../../img/bubbleButton.png), linear-gradient(to bottom, #ff8a00 0%,#ff7b00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8a00', endColorstr='#ff7b00',GradientType=0 );
+  border: 1px solid #ff7b00;
+  text-shadow: 0 1px 0 #ff7b00;
+  -webkit-box-shadow: inset 0 1px 0 #FFA342, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 0 #FFA342, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 0 #FFA342, 0 0 0 4px #d5d5d5;
+}
+
+.label.bFire, .badge.bFire {
+  background-image: #ff8a00;
+  background-image: -moz-linear-gradient(top, #ff8a00 0%, #ff7b00 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff8a00), color-stop(100%,#ff7b00));
+  background-image: -webkit-linear-gradient(top, #ff8a00 0%,#ff7b00 100%);
+  background-image: -o-linear-gradient(top, #ff8a00 0%,#ff7b00 100%);
+  background-image: -ms-linear-gradient(top, #ff8a00 0%,#ff7b00 100%);
+  background-image: linear-gradient(to bottom, #ff8a00 0%,#ff7b00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8a00', endColorstr='#ff7b00',GradientType=0 );
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+
+.bFire.active, .bFire:active {
+  -webkit-box-shadow: inset 0px 1px 5px 0 #ff7b00, 0 0 0 4px #d5d5d5;
+  -moz-box-shadow: inset 0 1px 5px 0 #ff7b00, 0 0 0 4px #d5d5d5;
+  box-shadow: inset 0 1px 5px 0 #ff7b00, 0 0 0 4px #d5d5d5;
+}

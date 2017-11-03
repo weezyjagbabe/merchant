@@ -1,0 +1,283 @@
+/* 1. Header
+-------------------------------------------------- */
+
+header {
+  background: url(../../models/img/colors/blueNoise.jpg);
+  border-bottom: 1px solid #0b3456;
+  border-top: 1px solid #0b3456;
+}
+
+header ul li a {
+  border-bottom: 1px solid #8cb7ec;
+  background: #0b3456;
+}
+
+.widgetBar {
+  background: #e5e5e5;
+  border-right: 1px solid #cccccc;
+}
+
+.widgetBar.barRight {
+  border-left: 1px solid #cccccc;
+  border-right: none;
+}
+
+.widgetBar .barInner {
+  min-height: 2px;
+}
+
+/*** Main menu ***/
+
+.widgetBar ul.navigation {
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.widgetBar ul.navigation > li > a > span.expand {
+	display: block;
+	width: 11px;
+	height: 11px;
+	position: absolute;
+	right: 10px;
+	top: 16px;
+  	background: url(../../models/img/menuIcons/expandIconNobar.png) no-repeat;
+}
+
+.widgetBar ul.navigation > li > a > span.collapse {
+	display: block;
+	width: 11px;
+	height: 3px;
+	position: absolute;
+	right: 10px;
+	top: 20px;
+  	background: url(../../models/img/menuIcons/collapseIconNobar.png) no-repeat;
+}
+
+.widgetBar ul.navigation > li > a {
+  background-image: url(../../models/img/navBg.png), #f7f7f7; /* Old browsers */
+  background-image: url(../../models/img/navBg.png), -moz-linear-gradient(top, #f7f7f7 0%, #e5e5e5 100%); /* FF3.6+ */
+  background-image: url(../../models/img/navBg.png), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+  background-image: url(../../models/img/navBg.png), -webkit-linear-gradient(top, #f7f7f7 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+  background-image: url(../../models/img/navBg.png), -o-linear-gradient(top, #f7f7f7 0%,#e5e5e5 100%); /* Opera 11.10+ */
+  background-image: url(../../models/img/navBg.png), -ms-linear-gradient(top, #f7f7f7 0%,#e5e5e5 100%); /* IE10+ */
+  background-image: url(../../models/img/navBg.png), linear-gradient(to bottom, #f7f7f7 0%,#e5e5e5 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+  color: #707070;
+  text-shadow: 0 1px 0 #fff;
+  border-bottom: 1px solid #cccccc;
+  height: 39px;
+  -webkit-box-shadow: inset 0 1px 0 #eeeeee;
+  -moz-moz-shadow: inset 0 1px 0 #eeeeee;
+  box-shadow: inset 0 1px 0 #eeeeee;
+}
+
+.widgetBar ul.navigation > li > a .icon-white {
+	background-image: url(../../models/img/glyphicons-halflings.png) !important;
+}
+
+.widgetBar ul.navigation > li > a > i {
+	opacity: 0.5;
+	margin-top: 0;
+	margin-right: 4px;
+}
+
+.widgetBar ul.navigation > li.active > a, .widgetBar ul.navigation > li > a:hover {
+	background-image: url(../../models/img/colors/blueNoise.jpg);
+	color: #fff;
+	text-shadow: none;
+	height: 39px;
+	margin-top: -1px;
+	border-top: 1px solid #0b3456;
+	border-bottom: 1px solid #0b3456;
+	border-right: 1px solid #0b3456;
+	margin-right: -1px;
+	-webkit-box-shadow: inset 0 1px 0 #92baeb !important;
+	-webkit-box-shadow: inset 0 1px 0 #92baeb !important;
+	position: relative;
+	z-index: 10999;
+}
+
+.widgetBar.barRight ul.navigation > li.active > a, 
+.widgetBar.barRight ul.navigation > li > a:hover {
+	border-left: 1px solid #0b3456;
+	margin-left: -1px;
+	border-right: none;
+	margin-right: 0;
+}
+
+.widgetBar ul.navigation > li.active > a .icon-white,
+.widgetBar ul.navigation > li > a:hover .icon-white,
+.widgetBar ul.navigation > li.dropActive > a .icon-white {
+	background-image: url(../../models/img/glyphicons-halflings-white.png) !important;
+	opacity: 1 !important;
+}
+
+.widgetBar ul.navigation > li.active > a > span.expand,
+.widgetBar ul.navigation > li > a:hover > span.expand,
+.widgetBar ul.navigation > li.dropActive > a > span.expand {
+  	background: url(../../models/img/menuIcons/expandIconNoise.png) no-repeat;
+}
+
+.widgetBar ul.navigation > li.active > a > span.collapse,
+.widgetBar ul.navigation > li > a:hover > span.collapse,
+.widgetBar ul.navigation > li.dropActive > a > span.collapse {
+  	background: url(../../models/img/menuIcons/collapseIconNoise.png) no-repeat;
+}
+
+.widgetBar ul.navigation > li.dropActive > a {
+	background-image: url(../../models/img/colors/blueNoise.jpg);
+	color: #fff;
+	text-shadow: none;
+	height: 39px;
+	margin-top: -1px;
+	border-top: 1px solid #0b3456;
+	border-bottom: 1px solid #0b3456;
+	border-right: 1px solid #0b3456;
+	margin-right: -1px;
+	-webkit-box-shadow: inset 0 1px 0 #92baeb !important;
+	-webkit-box-shadow: inset 0 1px 0 #92baeb !important;
+	position: relative;
+	z-index: 10999;
+}
+
+.widgetBar.barRight ul.navigation > li.dropActive > a {
+	border-left: 1px solid #0b3456;
+	margin-right: -1px;
+	border-right: none;
+	margin-right: 0;
+}
+
+.widgetBar ul.navigation > li > ul.subMenu > li > a {
+	color: #707070;
+	background: #f5f5f5;
+	border-bottom: 1px solid #cccccc;
+	-webkit-box-shadow: inset 0 1px 0 #f5f5f5;
+	-webkit-moz-shadow: inset 0 1px 0 #f5f5f5;
+	box-shadow: inset 0 1px 0 #f5f5f5;
+
+	-webkit-transition: all 0.15s ease-in-out;
+	 -moz-transition: all 0.15s ease-in-out;
+   	  -ms-transition: all 0.15s ease-in-out;
+	   -o-transition: all 0.15s ease-in-out;
+	      transition: all 0.15s ease-in-out;
+}
+
+.widgetBar ul.navigation > li > ul.subMenu > li > a:hover {
+	color: #707070;
+	background: #eeeeee;
+}
+
+.widgetBarContent {
+	padding: 0 10px;
+}
+
+.widgetBar .divider {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	height: 3px;
+	display: block;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	-webkit-box-shadow: inset 0 1px 0 #f5f5f5, 0 1px 0 #f5f5f5;
+	box-shadow: inset 0 1px 0 #f5f5f5, 0 1px 0 #f5f5f5;
+	position: relative;
+}
+
+.widgetBar .divider > div {
+	display: block;
+	background: #e5e5e5;
+	width: 40px;
+	height: 10px;
+	position: absolute;
+	margin-left: -20px;
+	left: 50%;
+	top: -4px;
+}
+
+.widgetBar .divider > div span {
+	display: block;
+	width: 28px;
+	height: 8px;
+	border: 1px solid #cccccc;
+	margin-top: 1px;
+	margin-left: 5px;
+	-webkit-box-shadow: inset 0 1px 0 #f5f5f5, 0 1px 0 #f5f5f5;
+	box-shadow: inset 0 1px 0 #f5f5f5, 0 1px 0 #f5f5f5;
+}
+
+ul.chatBar {
+	border-top: 1px solid #cccccc;
+}
+
+ul.chatBar li a { 
+	background: #e5e5e5;
+	border-bottom: 1px solid #cccccc;
+	-webkit-box-shadow: inset 0 1px 0 #f5f5f5, 0 1px 0 #f5f5f5;
+	box-shadow: inset 0 1px 0 #f5f5f5, 0 1px 0 #f5f5f5;
+
+	-webkit-transition: all 0.15s ease-in-out;
+	 -moz-transition: all 0.15s ease-in-out;
+   	  -ms-transition: all 0.15s ease-in-out;
+	   -o-transition: all 0.15s ease-in-out;
+	      transition: all 0.15s ease-in-out;
+}
+
+ul.chatBar li a span.name {
+	color: #707070;
+	line-height: 46px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+ul.chatBar li a:hover { 
+	background: #f8f8f8;
+}
+
+/* Calendar colors */
+
+.ui-datepicker { 
+	border: 3px solid #0b3456;
+	background: rgba(229, 229, 229, 0.35);
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+
+.ui-datepicker .ui-datepicker-header {
+	border-bottom: 1px solid #0b3456; 
+	border-radius: 0!important; 
+	box-shadow: 0 1px 0 #f5f5f5; 
+	-webkit-box-shadow: 0 1px 0 #f5f5f5; 
+	-moz-box-shadow: 0 1px 0 #f5f5f5; 
+	text-shadow: 0 1px 0 #fff;
+	color: #0b3456;
+}
+
+.ui-datepicker table thead tr th { 
+	border-bottom: 1px solid #0b3456; 
+	-webkit-box-shadow: 0 2px 0 #f5f5f5; 
+	color: #0b3456;
+	text-shadow: 0 1px 0 #fff;
+}
+
+.ui-datepicker td .ui-state-default {
+	color: #707070;
+}
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { 
+	background: url(../../models/img/forms/calendarArrows.png) no-repeat !important; 
+}
+
+.ui-datepicker .ui-datepicker-prev span { 
+	background-position: 0 0; 
+}
+
+.ui-datepicker .ui-datepicker-next span { 
+	background-position: -8px 0 !important; 
+}
+
+/* Nonfluidnav */
+
+.noFluidNav > li.active > a, .noFluidNav > li:hover > a {
+  background: #0b3456;
+  color: #fff;
+  text-shadow: none;
+}

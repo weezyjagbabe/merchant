@@ -1,0 +1,37 @@
+.containerNav, 
+.content .topBar, 
+.widget .wTitle, 
+.dropdown.open {
+  filter: none !important;
+}
+
+.containerNav .last-child {
+  border-right: none;
+}
+
+.barButtons {
+  border-right: 1px solid #ccc;
+}
+
+.topBar {
+  background: url(ie8/topBar.png) repeat-x left top !important;
+}
+
+.containerNav {
+  background: url(ie8/noFluidNav.png) repeat-x left top !important;
+}
+
+.widget .wTitle {
+  background: url(ie8/noFluidNav.png) repeat-x left top !important;
+}
+
+li.profile ul .profileInfo {
+  padding: 7px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 0 #fff;
+  -moz-box-shadow: inset 0 1px 0 #fff;
+  box-shadow: inset 0 1px 0 #fff;
+}
+
+

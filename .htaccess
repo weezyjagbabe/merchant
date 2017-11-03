@@ -1,0 +1,38 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	RewriteRule ^dashboard/?$ index.php [NC,L]
+	RewriteRule ^dashboardChart/?$ dashboardChart.php [NC,L]
+	RewriteRule ^dashboardBarChart/?$ dashboardBarChart.php [NC,L]
+	
+	RewriteRule ^sign-in/?$ sign-in.php [NC,L]	
+	RewriteRule ^logout/?$ logout.php [NC,L]
+	RewriteRule ^reset-password/?$ reset-password.php [NC,L]
+	RewriteRule ^contact-us/?$ support.php [NC,L]
+	
+	RewriteRule ^profile/?$ profile.php [NC,L]
+	RewriteRule ^inbox/?$ inbox.php [NC,L]
+
+	RewriteRule ^reset-password-([/\a-zA-Z0-9_-]+)-([/\a-zA-Z0-9_-]+)-?$ reset-password.php?userEmail=$1&code=$2 [QSA,L,B]
+
+	RewriteRule ^transactions/?$ transactions.php [NC,L]
+	RewriteRule ^transactions/([0-9a-zA-Z]+)?$ transactions.php?t=$1 [NC,L]
+	RewriteRule ^previous-transactions/?$ previous-transactions.php [NC,L]
+	RewriteRule ^previous-transactions/([0-9a-zA-Z]+) previous-transactions.php?t=$1 [NC,L]
+	RewriteRule ^settlements/?$ settlements.php [NC,L]
+	RewriteRule ^settlements-report/?$ settlements-report.php [NC,L]
+	RewriteRule ^invoice/?$ invoice.php [NC,L]
+	RewriteRule ^invoice/([0-9a-zA-Z]+)?$ invoice.php?t=$1 [NC,L]
+	RewriteRule ^export-pdf/?$ exportpdf.php [NC,L]
+	RewriteRule ^export-pdf/([0-9a-zA-Z]+)?$ exportpdf.php?t=$1 [NC,L]
+	RewriteRule ^export-csv/?$ exportcsv.php [NC,L]
+	RewriteRule ^export-csv/([0-9a-zA-Z]+)?$ exportcsv.php?t=$1 [NC,L]
+	RewriteRule ^test/?$ test.php [NC,L]
+
+		
+	RewriteRule ^privacy-policy/?$ privacy-policy.php [NC,L]
+	RewriteRule ^terms-conditions/?$ terms-conditions.php [NC,L]
+	
+	RewriteRule ^404/?$ 404.php [NC,L]
+		
+</IfModule>
